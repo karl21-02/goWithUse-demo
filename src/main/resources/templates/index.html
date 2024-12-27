@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go With Us Planner</title>
+    <link rel="stylesheet" href="/css/styles1.css">
+</head>
+<body>
+<h1>GO WITH US PLANNER</h1>
+<form action="/chat-gpt/question" method="POST">
+    <div class="container">
+        <label for="location_from">Bạn đang ở đâu:</label>
+        <input type="text" id="location_from" name="location_from" required>
+    </div>
+    <div class="container">
+        <label for="location_to">Bạn muốn trải nghiệm ở đâu:</label>
+        <input type="text" id="location_to" name="location_to" required>
+    </div>
+    <div class="container">
+        <label for="experience_time">Thời gian bạn muốn dành ra để trải nghiệm:</label>
+        <input type="number" id="experience_time" name="experience_time" required>
+    </div>
+    <div class="container">
+        <label for="companion">Bạn muốn đi với:</label>
+        <select id="companion" name="companion">
+            <option value="Solo">SOLO</option>
+            <option value="Couple">COUPLE</option>
+            <option value="Group">NHÓM</option>
+        </select>
+    </div>
+    <div class="checkbox-group">
+        <label>Bạn muốn trải nghiệm những gì:</label>
+        <div>
+            <input type="checkbox" id="healing" name="interests" value="Healing">
+            <label for="healing">Healing</label>
+        </div>
+        <div>
+            <input type="checkbox" id="food" name="interests" value="Đồ ăn">
+            <label for="food">Đồ ăn</label>
+        </div>
+        <div>
+            <input type="checkbox" id="diy" name="interests" value="DIY">
+            <label for="diy">DIY</label>
+        </div>
+        <div>
+            <input type="checkbox" id="hidden_gem" name="interests" value="Hidden gem">
+            <label for="hidden_gem">Hidden gem</label>
+        </div>
+        <!-- 추가적인 옵션들 -->
+    </div>
+    <button type="submit">GO WITH US PLANNER</button>
+</form>
+</body>
+</html>
